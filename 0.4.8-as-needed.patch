@@ -1,0 +1,11 @@
+--- origsrc/libwps-0.4.8/src/conv/helper/Makefile.am	2016-09-28 06:10:34.000000000 -0500
++++ src/libwps-0.4.8/src/conv/helper/Makefile.am	2018-01-07 20:32:17.338157300 -0600
+@@ -3,7 +3,7 @@ AM_CXXFLAGS = -I$(top_srcdir)/inc/ $(REV
+ 
+ noinst_LTLIBRARIES = libconvHelper.la
+ 
+-libconvHelper_la_LIBADD =
++libconvHelper_la_LIBADD = ../../lib/libwps-@WPS_MAJOR_VERSION@.@WPS_MINOR_VERSION@.la
+ libconvHelper_la_CPPFLAGS = $(XATTR_CFLAGS)
+ libconvHelper_la_SOURCES = helper.h helper.cpp
+ endif

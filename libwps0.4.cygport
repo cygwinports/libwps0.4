@@ -1,5 +1,5 @@
 NAME="libwps0.4"
-VERSION=0.4.3
+VERSION=0.4.8
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MS Works word processor format library"
@@ -10,6 +10,7 @@ SRC_URI="mirror://sourceforge/libwps/libwps-${VERSION}.tar.gz"
 SRC_DIR="libwps-${VERSION}"
 PATCH_URI="
 	0.2.4-vpath.patch
+	0.4.8-as-needed.patch
 "
 
 PKG_NAMES="libwps-tools ${NAME}_4 ${NAME}-devel ${NAME}-doc"
